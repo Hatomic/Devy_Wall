@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+}
+#logo {
+    width: 150px;
+    margin-top: -35px;
+    margin-left: -20px;
+}
+.navbar {
+    width: 100%;
+    /* margin-top: -20px; */
+    background-color: rgb(36, 34, 34);
+    /* position: fixed; */
+    height: 70px;
+}
+nav ul {
+    margin-top: -105px;
+    float: right;
+    margin-right: 20px;
+    
+}
+.navitem {
+    cursor: pointer;
+    margin-left: 25px;
+    height: 35px;
+    width: 90px;
+    background-color: rgb(36, 34, 34);
+    color: gold;
+    border-radius: 5px;
+    box-shadow: gold 50px;
+}
+.navitem:hover {
+    font-size: 15px;
+}
+.first_page {
+    margin-top: 10px;
+}
+#heading1 {
+    text-align: center;
+}
+.coming_content {
+    width: 90%;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+#slideshow_image {
+    width: 90%;
+    margin-left: 30px;
+}
+.indicator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.slideshow_indicator {
+    background-color: inherit;
+    height: 10px;
+    border-radius: 45px ;
+    margin-right: 15px;
+}
+
+.about_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#about {
+    text-align: center;
+}
+#about_image {
+    width: 82%;
+    height: 220px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+#name {
+    color: gold;
+}
+#details{
+    width: 90%;
+}
+#read {
+    margin-left: 30px;
+}
