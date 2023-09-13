@@ -3,6 +3,7 @@
 <head>
   <title>Home_page</title>
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body>
  <!-- <div class="all"> -->
@@ -11,14 +12,14 @@
     <nav class="navbar">
 <ul>
 <a href=""><button class="navitem">Home</button><a>
-    <a href="#contact_section"><button class="navitem">About</button><a>
-  <a href="#about_section"><button class="navitem">Contact</button><a>
+    <a href="#contact_section"><button class="navitem">About Us</button><a>
+  <a href="#about_section"><button class="navitem">Contact Us</button><a>
 <ul> 
     </nav>    
 </header>    
 
 <div class="first_page">
-     <h2 id="heading1">We Are Coming Soon!!!</h2>
+     <h2 id="heading1">We Are <span id="coming_soon"> Coming Soon!!!</span></h2>
      
      <div class="slideshow">
         <img id="slideshow_image" src="./img/human-hands-with-smartphone-working-laptop-office-desk_488220-9933.jpeg">
@@ -40,7 +41,7 @@
 
 
 
-     <h1 id="about">About Us</h1>
+     <h1 id="about">About <span id="us">Us</span></h1>
      <div class="about_section">
          <div class="left_section">
              <img id="about_image" src="./img/closeup-female-typing-laptop-keyboard_273609-15506.jpeg">
@@ -57,25 +58,29 @@
 
      <div class="contact_section">
          <div class="contact_left">
-
-             <form>
-<fieldset>
-
-
-</fieldset>
-                 
-
-             </form>
-
+            <h1 id="about" class="Contac">Contact <span id="us">Us</span></h1>
+           <h2 id="send">Send <span id="us">us</span> a message</h2>
+           <div class="social_icon">
+            <i class="fa-brands fa-whatsapp" style="color: #242222;"></i>
+            <i class="fa-brands fa-instagram" style="color: #242222;"></i>
+            <i class="fa-brands fa-twitter" style="color: #202222;"></i>
+            <i class="fa-brands fa-x-twitter" style="color: #202424;"></i>
+        </div>
+            <!-- <p id="copyright">copyright</p> -->
+            <!-- <p id="reserved">All rights <span id="us">reserved</span></p> -->
          </div>
 
          <div class="contact_right">
-
-
-
-             <p id="copyright">copyright</p>
-
-             <p id="reserved">All rights reserved</p>
+            <form>
+                <fieldset>
+                <input type="text" placeholder="Name" id="input">
+                <input type="text" placeholder="Email" id="input">
+                <textarea type="text" placeholder="Message" id="message"></textarea>
+               <button id="submit">Submit</button>
+            </fieldset>
+                                 
+                
+                             </form>
 
          </div>
 

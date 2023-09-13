@@ -4,20 +4,19 @@
 }
 #logo {
 width: 150px;
-margin-top: -35px;
+margin-top: -30px;
 margin-left: -20px;
 }
 header { 
     background-color: rgb(36, 34, 34);
     width: 100%;
     position: fixed;
-    height: 70px;
-    margin-bottom: 1000px;
+    height: 90px;
  }
  .navbar {
-     margin-top: 20px;
+     margin-top: 25px;
      float: right;
-     margin-right: 20px;
+     margin-right: 40px;
     }
     .navitem {
      cursor: pointer;
@@ -32,14 +31,34 @@ header {
  }
 .navitem:hover {
     font-size: 15px;
+    transition: 1s ease-in-out;
 }
 .first_page {
     padding-top: 110px;
 }
 #heading1 {
+    justify-self: auto;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 40px;
+    color: rgb(36, 34, 34);
+    box-shadow: 5px 10px 10px rgb(36, 34, 34);
+    text-shadow: 2px 5px 5px gold;
+    padding-bottom: 10px;
+}
+#coming_soon {
+    
+    animation: animate 2s infinite ease-in;
+    animation: animate 2s infinite ease-out;
+    /* animation: animate 1s infinite ease-out; */
+}
+@keyframes animate {
+    from {
+        color: inherit;
+    }
+    to {
+        color: white;
+    }
 }
 .coming_content {
     width: 90%;
@@ -50,9 +69,10 @@ header {
     font-size: 20px;
 }
 #slideshow_image {
-    width: 90%;
-    margin-left: 30px;
+    width: 100%;
+    margin-top: -25px;
     height: 400px;
+    box-shadow: 5px 10px 10px rgb(36, 34, 34);
 }
 .indicator {
     margin-top: 20px;
@@ -61,8 +81,9 @@ header {
 }
 .slideshow_indicator {
     background-color: inherit;
-    height: 10px;
+    height: 20px;
     width: 20px;
+    margin-top: 25px;
     border-radius: 45px ;
     margin-right: 15px;
 }
@@ -73,21 +94,30 @@ header {
     margin-bottom: 40px;
 }
 #about {
+    justify-self: auto;
     text-align: center;
     margin-top: 30px;
+    font-size: 45px;
+}
+#us {
+    color: gold;
+    text-shadow: 0px 5px 5px rgb(36, 34, 34);
 }
 #about_image {
     width: 82%;
-    height: 230px;
+    height: 235px;
     margin-top: 45px;
     margin-left: 20px;
+    border-radius: 20px;
 }
 .right_section {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #name {
+    font-size: 30px;
     color: gold;
+    text-shadow: 0px 5px 5px rgb(36, 34, 34);
 }
 #details{
     width: 90%;
@@ -95,8 +125,8 @@ header {
 }
 #read {
     margin-top: 15px;
-    float: right;
-    margin-right: 50px;
+    /* float: right;
+    margin-right: 160px; */
     font-size: 12px;
     height: 30px;
      width: 70px;
@@ -105,45 +135,100 @@ header {
      border-radius: 15px;
      cursor: pointer;
 } 
-fieldset {
-    margin-top: 20px;
-    margin-left: 30px;
-    height: 400px;
+#send {
+    margin-top: 40px;
+    justify-self: auto;
+    text-align: center;
 }
-
+.contact_left {
+    margin-top: 80px;
+}
+fieldset {
+    margin-top: 40px;
+    margin-right: 20px;
+    height: 330px;
+}
+#input {
+    width: 94%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    height: 40px;
+    padding-left: 5px;
+}
+#message {
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 94%;
+    height: 80px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#submit {
+    height: 35px;
+    width: 120px;
+    background-color: rgb(36, 34, 34);
+    color: gold;
+    margin-left: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 15%;
+    border-radius: 5px;
+}
+#submit:hover {
+    color: rgb(165, 141, 2);
+}
 
 @media (max-width:500px) {
     #logo {
+        margin-top: -20px;
         margin-left: -30px;
     }
     .navitem {
         margin-left: -2px;
-        background-color: none;
+        background-color: inherit;
         box-shadow: none;
         
     }
     .navbar {
         margin-top: -100px;
-        margin-right: 0px;   
+        margin-right: 10px;   
     }
     #slideshow_image {
-        margin-left: 18px;
         height: 350px;
     }
     .coming_content {
         margin-left: 25px;
         width: 85%;
     }
+    .about_section {
+        display: block;
+    }
     #about_image {
         height: 300px;
+        width: 90%;
         margin-top: 80px;
-        margin-left: 15px;
+        margin-left: 20px;
+    }
+    .right_section {
+        margin-left: 30px;
+    }
+    #details {
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
     #read {
         margin-top: -5px;
     }
     .about_section {
         margin-top: -15px;
+    }
+    .contact_section {
+        display: block;
+    }
+    fieldset {
+        margin-top: 20px;
+        margin-left: 15px;
     }
 }
 
@@ -155,9 +240,7 @@ fieldset {
         margin-right: 80px;
     }
     #slideshow_image {
-        margin-left: 130px;
-        height: 550px;
-        width: 80%;
+        height: 650px;
     }
     .coming_content {
         width: 70%;
@@ -183,5 +266,11 @@ fieldset {
     #read {
         margin-right: 190px;
         margin-top: 80px;
+    }
+    #input, #message {
+        width: 97%;
+    }
+    #submit {
+        margin-left: 45%;
     }
 }
